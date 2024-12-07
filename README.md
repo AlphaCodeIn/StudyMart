@@ -45,7 +45,7 @@ htdocs/
         ├── index.php
         ├── login_register.php
         ├── upload.php
-        └── ...s
+        └── ...
 ```
 
 Follow the steps below to set up the project on your local machine.
