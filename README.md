@@ -47,8 +47,6 @@ htdocs/
         ├── login_register.php
         ├── upload.php
         └── ...
----
-## Installation
 
 Follow the steps below to set up the project on your local machine.
 
