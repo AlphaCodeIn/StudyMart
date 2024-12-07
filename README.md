@@ -33,7 +33,7 @@
 ## Project Structure
 
 The project folder structure is organized as follows:
-```markdown
+```bash
 htdocs/
    └── project/
      └── studymart/
