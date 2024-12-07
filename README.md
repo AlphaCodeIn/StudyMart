@@ -29,7 +29,7 @@
 ## Project Structure
 
 The project folder structure is organized as follows:
-```bash
+```
 htdocs/
    └── project/
      └── studymart/
@@ -45,7 +45,9 @@ htdocs/
         ├── index.php
         ├── login_register.php
         ├── upload.php
-        └── ...
+        └── ...s
+```
 
 Follow the steps below to set up the project on your local machine.
+
 
