@@ -1,0 +1,38 @@
+
+.img-slider {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-size: 100% 100%;
+    background-image: url("/project/studymart/img/image01.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  
+}
+
+.text-overlay {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+@keyframes slider {
+    0%   { background-image: url("/project/studymart/img/image01.jpg"); } 
+    33%  { background-image: url("/project/studymart/img/image01.jpg"); } 
+    34%  { background-image: url("/project/studymart/img/image2.jpg"); } 
+    66%  { background-image: url("/project/studymart/img/image2.jpg"); } 
+    67%  { background-image: url("/project/studymart/img/image3.jpg"); } 
+    100% { background-image: url("/project/studymart/img/image3.jpg"); } 
+}

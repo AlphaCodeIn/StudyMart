@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;    
+}
+/* ################################################################################################################################# */
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    flex-grow: 1; 
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ############################################################################################################################ */
+/*common Background and Text Color */
+.dark-mode {
+    background-color: #242526;
+    color: white;
+}
+
+.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Card Styling */
+.card {
+    background: #333;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    height: 225px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    padding-top: 30px;
+    color: white;
+}
+
+/* ############################################################################################################################ */
+
+/* Popup Styling */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: #3a3b3c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    z-index: 100;
+}
+
+.popup h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.popup h2 span {
+    color: #fff;
+}
+
+.popup input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.popup button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.popup button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #f00;
+}
+
+/* ############################################################################################################################ */
+
+/* Notes and Paper Section */
+.notes-section, .paper-section {
+    flex: 1;
+}
+
+.notes-container, .papers-container {
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.note-card, .paper-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 29px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.note-card:hover, .paper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.note-thumbnail, .paper-thumbnail {
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    height: 182px;
+    margin-bottom: -2px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.note-title, .paper-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 8px 0;
+    word-wrap: break-word;
+}
+
+.note-author, .note-category, .note-description {
+    font-size: 0.9em;
+    color: #666;
+    margin: 4px 0;
+}
+
+.note-download, .paper-download {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.note-download:hover, .paper-download:hover {
+    background-color: royalblue;
+    transform: scale(1.05);
+}
+
+.no-notes, .error {
+    text-align: center;
+    color: #888;
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+.note-author {
+    text-align: left;
+    margin: 0;
+}
+
+/* ############################################################################################################################ */
+/* Search Section */
+.search-section {
+    width: 35%;
+    max-width: 600px; /* Corrected from 600% to 600px */
+    margin: 30px auto;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 50px;
+    overflow: hidden; /* Ensures content stays inside the rounded corners */
+}
+
+.search-section input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 18px;
+    padding: 0 15px;
+    min-width: 0;
+    border-radius: 50px; /* Ensures input has rounded corners initially */
+}
+
+.search-section button {
+    height: 100%;
+    padding: 0 15px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-section:focus-within {
+    border-color: #007bff; 
+}
+
+
+/* ########################################################################################################################### */
+
+/* contact us ka section */
+
+.contact-us {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contact Form Container */
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Form styling */
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form button:active {
+    background-color: #003f7f;
+}
+
+/* ######################################################################### */
+
+/* upload section */
+/* Contact Container */
+.contact-container {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /
+}
+
+/* Page Title */
+.contact-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* List Styling */
+.contact-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-container li {
+    margin: 10px 0;
+}
+
+.contact-container li a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-container li a:hover {
+    background-color: #0056b3;
+}
+
+.contact-container li a:active {
+    background-color: #003f7f;
+}
+
+/* ###################################################################################### */
+.un-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.un-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Error and success message styles */
+.un-container .error-message {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.un-container .success-message {
+    color: green;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Form styles */
+.un-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styles */
+.un-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and textarea styles */
+.un-container input[type="text"],
+.un-container input[type="file"],
+.un-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Button styles */
+.un-container button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.un-container button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+########################################################################################################################

@@ -1,0 +1,160 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-part {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.lg-heading {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #333;
+}
+
+.about-content {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-content p {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #1877F2;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ul-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.left, .right {
+    width: 45%;
+}
+
+.ul-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ul-list ul li {
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1.1rem;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ul-list ul li:hover {
+    color: #333;
+    transform: scale(1) translateY(-0.7px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-developer {
+    margin-top: 50px;
+}
+
+.developer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.developer-image {
+    text-align: center;
+    margin: 0 14px;
+}
+
+.developer-image img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.developer-info {
+    width: 70%;
+}
+
+.developer-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background-color: yellow;
+    color: black;
+    padding: 0 1px;
+}
+
+.number::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.number {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.number .num {
+    float: left;
+    width: 25%;
+}
+
+.number span {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.number p {
+    font-weight: 500;
+}
+
+.cta-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #1877F2;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d30029;
+}
+
+.text-black {
+    color: #333;
+}
