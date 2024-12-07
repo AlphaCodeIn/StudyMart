@@ -30,6 +30,7 @@
 
 The project folder structure is organized as follows:
 
+```plaintext
 htdocs/
 -└── project/
     -└── studymart/
