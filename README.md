@@ -20,16 +20,12 @@
 - **Localhost Server**: XAMPP  
 
 ---
-
-### How It Will Appear:
-1. **Code Block**: Displays the directory structure with no extra indentation.
-2. **Text Below**: Will be displayed as normal text.
-## Installation Instructions  
+  
 
 1. Clone this repository to your local machine:  
    ```bash
    git clone https://github.com/AlphaCodeIn/StudyMart.git
-
+   
 ## Project Structure
 
 The project folder structure is organized as follows:
