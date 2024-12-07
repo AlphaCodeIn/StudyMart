@@ -30,7 +30,6 @@
 
 The project folder structure is organized as follows:
 ```markdown
-```plaintext
 htdocs/
    └── project/
      └── studymart/
@@ -49,3 +48,8 @@ htdocs/
         └── ...
 
 Follow the steps below to set up the project on your local machine.
+
+
+### How It Will Appear:
+1. **Code Block**: Displays the directory structure with no extra indentation.
+2. **Text Below**: Will be displayed as normal text.
