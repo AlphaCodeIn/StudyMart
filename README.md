@@ -30,4 +30,20 @@
 
 The project folder structure is organized as follows:
 
-   project/ └── studymart/ <-- Main project folder ├── admin/ <-- Admin-related files ├── connection/ <-- Database connection files ├── css/ <-- CSS files for styling ├── includes/ <-- Includes like headers, footers, etc. ├── img/ <-- Image files for the project ├── notesbazzar/ <-- Notes and file upload-related files ├── upload/ <-- Folder for uploaded files (e.g., notes, question papers) ├── view/ <-- View files for displaying data ├── dashboard.php <-- Admin dashboard page ├── index.php <-- Home page of the website ├── login_register.php <-- Login and registration page ├── upload.php <-- File upload handling └── ... <-- Additional files and folders
+htdocs/
+└── project/
+    └── studymart/
+        ├── admin/
+        ├── connection/
+        ├── css/
+        ├── includes/
+        ├── img/
+        ├── notesbazzar/
+        ├── upload/             <-- Folder for uploaded files
+        ├── view/
+        ├── dashboard.php
+        ├── index.php
+        ├── login_register.php
+        ├── upload.php
+        └── ...
+
