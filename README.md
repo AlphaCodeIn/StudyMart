@@ -21,7 +21,11 @@
 
 ---
 
+### How It Will Appear:
+1. **Code Block**: Displays the directory structure with no extra indentation.
+2. **Text Below**: Will be displayed as normal text.
 ## Installation Instructions  
+
 1. Clone this repository to your local machine:  
    ```bash
    git clone https://github.com/AlphaCodeIn/StudyMart.git
@@ -49,7 +53,3 @@ htdocs/
 
 Follow the steps below to set up the project on your local machine.
 
-
-### How It Will Appear:
-1. **Code Block**: Displays the directory structure with no extra indentation.
-2. **Text Below**: Will be displayed as normal text.
