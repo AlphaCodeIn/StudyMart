@@ -1,0 +1,12 @@
+http://localhost/project/StudyMart/index.php
+
+http://localhost/project/StudyMart/admin/admin_login.php
+
+open mysql in terminal 
+
+mysql -u root
+
+SHOW DATABASES;
+
+INSERT INTO admins (username, password) VALUES ('admin', 'alpha@123456');
+
