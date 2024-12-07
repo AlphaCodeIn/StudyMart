@@ -29,7 +29,7 @@
 ## Project Structure
 
 The project folder structure is organized as follows:
-
+```markdown
 ```plaintext
 htdocs/
    └── project/
@@ -49,4 +49,3 @@ htdocs/
         └── ...
 
 Follow the steps below to set up the project on your local machine.
-
