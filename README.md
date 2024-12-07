@@ -31,8 +31,8 @@
 The project folder structure is organized as follows:
 
 htdocs/
-└── project/
-    └── studymart/
+-└── project/
+    -└── studymart/
         ├── admin/
         ├── connection/
         ├── css/
